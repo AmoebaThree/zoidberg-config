@@ -1,0 +1,29 @@
+hosts:
+    one:
+        ip: 192.168.0.1
+    two:
+        ip: 192.168.0.2
+    three:
+        ip: 192.168.0.3
+services:
+    bumper:
+        source: https://github.com/AmoebaThree/Bumper.git
+        host: three
+    redeye-line:
+        source: https://github.com/AmoebaThree/Redeye.git
+        host: two
+    redeye-obstacle:
+        source: https://github.com/AmoebaThree/Redeye.git
+        host: two
+    squeakydeaky:
+        source: https://github.com/AmoebaThree/SqueakyDeaky.git
+        host: two
+    jaxx:
+        source: https://github.com/AmoebaThree/Jaxx.git
+        host: two
+    fernando:
+        source: https://github.com/AmoebaThree/Fernando.git
+        host: two
+    bercow:
+        source: https://github.com/AmoebaThree/Bercow.git
+        host: one
