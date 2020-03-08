@@ -2,7 +2,10 @@ hosts:
     two:
         ip: 192.168.0.2
         user: pi
+sources:
+    drivereset:
+        source: https://github.com/AmoebaThree/drivereset.git
 services:
     drivereset:
+        source: drivereset
         host: two
-        source: https://github.com/AmoebaThree/drivereset.git

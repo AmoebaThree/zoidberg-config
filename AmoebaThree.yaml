@@ -8,28 +8,41 @@ hosts:
     three:
         ip: 192.168.0.3
         user: pi
-services:
-    redis:
-        host: one
-        system: true
+sources:
     bercow:
         source: https://github.com/AmoebaThree/Bercow.git
-        host: one
     bumper:
         source: https://github.com/AmoebaThree/Bumper.git
-        host: three
-    redeye-line:
+    redeye:
         source: https://github.com/AmoebaThree/Redeye.git
-        host: two
-    redeye-obstacle:
-        source: https://github.com/AmoebaThree/Redeye.git
-        host: two
     squeakydeaky:
         source: https://github.com/AmoebaThree/SqueakyDeaky.git
-        host: two
     jaxx:
         source: https://github.com/AmoebaThree/Jaxx.git
-        host: two
     fernando:
         source: https://github.com/AmoebaThree/Fernando.git
+services:
+    redis:
+        system: true
+        host: one
+    bercow:
+        source: bercow
+        host: one
+    bumper:
+        source: bumper
+        host: three
+    redeye-line:
+        source: redeye
+        host: two
+    redeye-obstacle:
+        source: redeye
+        host: two
+    squeakydeaky:
+        source: squeakydeaky
+        host: two
+    jaxx:
+        source: jaxx
+        host: two
+    fernando:
+        source: fernando
         host: two
