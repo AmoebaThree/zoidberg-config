@@ -5,4 +5,4 @@ hosts:
 services:
     drivereset:
         host: two
-        source: https://github.com/AmoebaThree/Bercow.git
+        source: https://github.com/AmoebaThree/drivereset.git
