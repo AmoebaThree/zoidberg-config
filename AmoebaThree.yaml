@@ -1,11 +1,20 @@
 hosts:
     one:
         ip: 192.168.0.1
+        user: pi
     two:
         ip: 192.168.0.2
+        user: pi
     three:
         ip: 192.168.0.3
+        user: pi
 services:
+    redis:
+        host: one
+        system: true
+    bercow:
+        source: https://github.com/AmoebaThree/Bercow.git
+        host: one
     bumper:
         source: https://github.com/AmoebaThree/Bumper.git
         host: three
@@ -24,6 +33,3 @@ services:
     fernando:
         source: https://github.com/AmoebaThree/Fernando.git
         host: two
-    bercow:
-        source: https://github.com/AmoebaThree/Bercow.git
-        host: one
