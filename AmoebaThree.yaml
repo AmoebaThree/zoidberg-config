@@ -21,6 +21,8 @@ sources:
         source: https://github.com/AmoebaThree/Jaxx.git
     fernando:
         source: https://github.com/AmoebaThree/Fernando.git
+    twitchy:
+        source: https://github.com/AmoebaThree/Twitchy.git
 services:
     redis:
         system: true
@@ -46,3 +48,6 @@ services:
     fernando:
         source: fernando
         host: two
+    twitchy:
+        source: twitchy
+        host: three
