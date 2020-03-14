@@ -23,16 +23,16 @@ sources:
         source: https://github.com/AmoebaThree/Fernando.git
     twitchy:
         source: https://github.com/AmoebaThree/Twitchy.git
+    pfd-driver:
+        source: https://github.com/AmoebaThree/pfd-driver.git
 services:
     redis:
         system: true
+        apt: redis-server
         host: one
     bercow:
         source: bercow
         host: one
-    bumper:
-        source: bumper
-        host: three
     redeye-line:
         source: redeye
         host: two
@@ -48,6 +48,12 @@ services:
     fernando:
         source: fernando
         host: two
+    pfd-driver:
+        source: pfd-driver
+        host: three
+    bumper:
+        source: bumper
+        host: three
     twitchy:
         source: twitchy
         host: three
