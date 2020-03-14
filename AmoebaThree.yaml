@@ -2,6 +2,7 @@ hosts:
     one:
         ip: 192.168.0.1
         user: pi
+        master: true
     two:
         ip: 192.168.0.2
         user: pi
