@@ -25,6 +25,8 @@ sources:
         source: https://github.com/AmoebaThree/Twitchy.git
     pfd-driver:
         source: https://github.com/AmoebaThree/pfd-driver.git
+    snaps:
+        source: https://github.com/AmoebaThree/Snaps.git
 services:
     redis:
         system: true
@@ -56,4 +58,10 @@ services:
         host: three
     twitchy:
         source: twitchy
+        host: three
+    snaps-pi:
+        source: snaps
+        host: one
+    snaps-cam:
+        source: snaps
         host: three
