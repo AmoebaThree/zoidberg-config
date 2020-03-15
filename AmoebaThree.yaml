@@ -31,7 +31,8 @@ sources:
 services:
     redis:
         system: true
-        apt: redis-server
+        apt:
+            - redis-server
         host: one
     bercow:
         source: bercow
