@@ -28,6 +28,8 @@ sources:
         source: https://github.com/AmoebaThree/pfd-driver.git
     snaps:
         source: https://github.com/AmoebaThree/Snaps.git
+    blinks:
+        source: https://github.com/AmoebaThree/Blinks.git
 services:
     redis:
         system: true
@@ -66,4 +68,7 @@ services:
         host: one
     snaps-cam:
         source: snaps
+        host: three
+    blinks:
+        source: blinks
         host: three
