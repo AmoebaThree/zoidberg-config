@@ -30,6 +30,8 @@ sources:
         source: https://github.com/AmoebaThree/Snaps.git
     blinks:
         source: https://github.com/AmoebaThree/Blinks.git
+    socks:
+        source: https://github.com/AmoebaThree/Socks.git
 services:
     redis:
         system: true
@@ -72,3 +74,6 @@ services:
     blinks:
         source: blinks
         host: three
+    socks:
+        source: socks
+        host: one
