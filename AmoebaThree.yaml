@@ -32,6 +32,8 @@ sources:
         source: https://github.com/AmoebaThree/Blinks.git
     socks:
         source: https://github.com/AmoebaThree/Socks.git
+    riker:
+        source: https://github.com/AmoebaThree/Riker.git
 services:
     redis:
         system: true
@@ -76,4 +78,7 @@ services:
         host: three
     socks:
         source: socks
+        host: one
+    riker:
+        source: riker
         host: one
